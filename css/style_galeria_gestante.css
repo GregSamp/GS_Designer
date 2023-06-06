@@ -1,0 +1,352 @@
+body {
+	background: url(../img/_banner/1.jpg) no-repeat fixed;
+	background-size: 1480px 100%;
+	background-position: center;
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+	margin-bottom: 0;
+}
+
+p {
+	color: #000;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.inner_galeria {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding: 20px;
+	vertical-align: middle;
+	max-width: none;
+	float: left;
+	font-size: 125%;
+}
+
+a {
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+	color: #ffc107;
+}
+
+
+/* Esse trecho de codigo permite ajustar o estilo do background para as paginas com dropdown, ou seja as galerias. É de extrema importância, pois sem esse trecho as cores ficam erradas, ou não de acordo com a página inicial */
+
+@media screen and (min-width: 960px) {
+	.menu li.active a {
+		background: #000;
+		color: #fff;
+	}
+	.menu li.active .dl-submenu li a {
+		background: #fff;
+		color: #000;
+	}
+	.menu li.active .dl-submenu li a:hover {
+		background: #000;
+		color: #fff;
+	}
+}
+
+.dl-menuwrapper li.dl-back:after,
+.dl-menuwrapper li>a:not(:last-child):after {
+	color: #fff;
+}
+
+
+/* fim*/
+
+.section-header {
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+.section-header h2 {
+	font-weight: 700;
+	font-size: 40px;
+	color: #000;
+	border-top: none;
+	border-bottom: none;
+	text-decoration: none;
+}
+
+.portfolio-section {
+	margin-top: -225px;
+}
+
+.portfolio-filter-btn-group {
+	margin-bottom: 25px;
+	text-align: center;
+	z-index: 999;
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+}
+
+.portfolio-filter-btn-group ul {
+	display: inline-block;
+}
+
+.portfolio-filter-btn-group ul li {
+	float: left;
+}
+
+.portfolio-filter-btn-group ul li a {
+	padding: 0;
+	display: block;
+	float: left;
+	box-shadow: 1px 1px 1px #000;
+	-moz-box-shadow: 1px 1px 1px #000;
+	-o-box-shadow: 1px 1px 1px #000;
+	-webkit-box-shadow: 1px 1px 1px #000;
+	background: #fff;
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+	position: relative;
+	max-width: 48%;
+	margin: 1%;
+}
+
+.portfolio-filter-btn-group ul li a:last-child {
+	padding: 4px;
+}
+
+.portfolio-filter-btn-group ul li a:hover {
+	color: #fff;
+	background: #000;
+}
+
+.portfolio-filter-btn-group ul li a.selected {
+	color: #fff;
+	background: #000;
+}
+
+.portfolio-filter-btn-group img {
+	max-width: 100%;
+	transition: all 0.5s;
+	z-index: 99999;
+}
+
+.portfolio-filter-btn-group img:hover {
+	opacity: 0.4;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+
+.portfolio-filter-btn-group ul li a p {
+	position: absolute;
+	top: 30%;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	color: #fff;
+	font-size: 19px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	opacity: 0;
+	transform: translateY(-100%);
+	-moz-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	-webkit-transform: translateY(-100%);
+}
+
+.portfolio-filter-btn-group ul li a:hover p {
+	opacity: 1;
+	transform: translateY(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-webkit-transform: translateY(0);
+}
+
+.titulo_album {
+	float: left;
+	width: 100%;
+	position: absolute;
+}
+
+.titulo_album p {
+	color: #fff;
+}
+
+
+/* Media-querys */
+@media screen and (min-width: 720px) {
+	.portfolio-filter-btn-group ul li a {
+		max-width: 42%;
+		margin: 1%;
+	}
+	.portfolio-filter-btn-group ul li a p {
+		font-size: 19px;
+	}
+}
+
+
+.portfolio-items {
+	overflow: hidden;
+}
+
+.portfolio-item {
+	overflow: hidden;
+}
+
+.portfolio-items .portfolio-item {
+	width: 25%;
+	height: 255px;
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolio-items .portfolio-item img {
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all .4s;
+	-moz-transition: all .4s;
+	-ms-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+}
+
+.portfolio-item:hover img {
+	transform: scale(1.2);
+	-webkit-transform: all .4s;
+	-moz-transform: all .4s;
+	-ms-transform: all .4s;
+	-o-transform: all .4s;
+}
+
+.portfolio-items .portfolio-item .portfolio-details-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: table;
+	opacity: 0;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.portfolio-item:hover .portfolio-details-wrapper {
+	opacity: 1;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.portfolio-item .portfolio-details {
+	display: table-cell;
+	padding: 50px 0;
+	vertical-align: middle;
+	-moz-transition: opacity, 0.4s;
+	-o-transition: opacity, 0.4s;
+	-webkit-transition: opacity, 0.4s;
+	transition: opacity, 0.4s;
+}
+
+.portfolio-item .portfolio-details .portfolio-meta-btn {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+/* Efeito da lupa vindo da esquerda */
+
+.portfolio-item .portfolio-details {
+	-moz-transform: translateX(-200%);
+	-ms-transform: translateX(-200%);
+	-webkit-transform: translateX(-200%);
+	transform: translateX(-200%);
+}
+
+
+/* Efeito da lupa vindo da esquerda */
+
+.portfolio-item:hover .portfolio-details {
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-webkit-transform: translateX(0);
+}
+
+.portfolio-details .portfolio-meta-btn ul li a {
+	display: block;
+	text-align: center;
+}
+
+.portfolio-details .portfolio-meta-btn ul li a i {
+	font-size: 36px;
+	color: #000;
+	line-height: 35px;
+	font-weight: 700;
+}
+
+
+/* Media-querys */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.portfolio-items .portfolio-item {
+		height: 255px;
+		overflow: hidden;
+		position: relative;
+		width: 33.33331%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.portfolio-items .portfolio-item {
+		height: 220px;
+		overflow: hidden;
+		position: relative;
+		width: 33.33331%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.section-header {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.portfolio-items .portfolio-item {
+		height: 210px;
+		overflow: hidden;
+		position: relative;
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.portfolio-items .portfolio-item {
+		width: 100%;
+		height: 255px;
+	}
+}
+
+
+/* Resolução do problema do espaço entre as imagens na galeria */
+
+@media screen and (min-width: 1366px) {
+	.portfolio-works {
+		max-width: 1349px;
+		margin: auto;
+	}
+}

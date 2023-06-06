@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fotógrafo - Elson Lacerda</title>
+	<link rel="shortcut icon" type="image/png" href="img/camera-icon.png" />
+	<!-- Folhas de estilo -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/estilo_font.css">
+	<link rel="stylesheet" href="css/animate.css">
+    <!-- Estilo carrossel depoimentos -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- jQuery plugins -->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<!-- Modernizr é uma pequena biblioteca Javascript que detecta a disponibilidade das novas características do HTML5 e CSS3 nos browsers.Ex: Animações em geral  -->
+	<script src="js/modernizr.custom.js"></script>
+
+	<!--Função Script para deslizar as sessões ao clicar nos links do menu-->
+	<script>
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 800);
+			});
+		});
+	</script>
+
+	<!-- função para efeito parallax scroll nas imagens fixas -->
+	<!-- A variavel tamanhoViewport serve para que o html identifique se a pagina esta acima de 768, caso esteja o efeito do paralax é realizado, caso esteja abaixo, na versão mobile o efeito diminuirá a proporção para um deslocamento da imagem pela metade -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('div.bgParallax, div.bgParallax_0').each(function() {
+				var $obj = $(this);
+
+
+				$(window).scroll(function() {
+					var yPos = -($(window).scrollTop() / $obj.data('speed'));
+
+					var bgpos = '50% ' + yPos + 'px';
+
+					$obj.css('background-position', bgpos);
+
+				});
+
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<!-- Sessão de introdução e menu  -->
+	<div class="bgParallax_0" data-speed="10">
+		<header id="menuHeader" class="header">
+			<div class="container_menu">
+				<div>
+					<nav class="menu">
+						<div id="dl-menu" class="dl-menuwrapper">
+							<button class="dl-trigger">Open Menu</button>
+							<ul class="dl-menu">
+								<!-- A classe scroll serve para que o background do menu percorra automaticamente assim que o úsuario navegar pelas sessões, acrescentar o mesmo id do body, para que não haja problema na função -->
+								<li class="menu-item active"><a class="menu_efeito" href="index.html">HOME</a></li>
+								<li class="menu-item"><a class="menu_efeito scroll" href="#sobre">SOBRE</a></li>
+								<li class="menu-item"><a class="menu_efeito scroll" href="#area_portfolio">PORTFOLIO</a></li>
+								<li class="menu-item"><a class="menu_efeito" href="">ALBUNS</a>
+									<ul class="dl-submenu">
+										<li><a href="galeria_casamento.html">CASAMENTO</a></li>
+										<li><a href="galeria_e-session.html">E-SESSION</a></li>
+										<li><a href="galeria_festa_infantil.html">FESTA INFANTIL</a></li>
+										<li><a href="galeria_gestante.html">GESTANTE</a></li>
+										<li><a href="galeria_infantil.html">INFANTIL</a></li>
+										<li><a href="galeria_preWedding.html">PRÉ-WEDDING</a></li>
+										<li><a href="galeria_15anos.html">15 ANOS</a></li>
+									</ul>
+								</li>
+								<li class="menu-item"><a class="menu_efeito scroll" href="">SUGESTÕES</a></li>
+								<li class="menu-item"><a class="menu_efeito scroll" href="#area_contato">CONTATOS</a></li>
+							</ul>
+						</div>
+					</nav>
+					<!-- /.menu -->
+				</div>
+			</div>
+		</header>
+		<div class="inner">
+			<div class="content">
+
+				<div class="hoverzoom_logo1">
+					<a href="index.html"><img src="img/logo_escudo.png" alt=""></a>
+					<div class="retina_logo">
+						<p>Paz e Tranqulidade</p>
+					</div>
+				</div>
+				<div class="hoverzoom_logo2">
+					<div class="retina_logo2">
+						<p>Naturalidade</p>
+					</div>
+				</div>
+				<div class="hoverzoom_logo2">
+					<div class="retina_logo3">
+						<p>Click certo</p>
+					</div>
+				</div>
+
+				<a href="index.html"><img class="logo_nome" src="img/logo_assinatura.png" alt=""></a>
+				<p class="texto_principal">Capacitado por Deus na arte de eternizar momentos</p>
+				<img class="decorar" src="img/decorativo_texto3.png" alt="">
+			</div>
+			<ul class="social_intro wow bounceInDown">
+				<li><a href="http://facebook.com/ElsonLFotografia" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="https://www.instagram.com/elsonlacerdafotografia/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Sessão de sobre  -->
+	<section id="sobre" class="left-col wow fadeInLeft">
+		<h2>Quem sou eu</h2><br class="quebra_1">
+		<p>"Não é apenas clicar, e sim, ter alguma emoção, tem que achar alguma raiva, sofrimento, ou amor, resumindo: fotografar é registrar com o coração, com a alma, é sentir! - Elson Lacerda". <br class="quebra_2">"Sei que a cada momento em minha vida, o Senhor esta comigo, a cada ensaio, estou bem acompanhado." <br class="quebra_2">"Muitos tentarão me parar, então eu pegarei impulso pra chegar mais longe." </p>
+	</section>
+	<!-- Sessão de sobre - foto lateral -->
+	<section class="sidebar wow fadeInRight">
+		<img class="foto_sobre" src="img/Foto_sobre_2.jpg">
+	</section>
+	<section id="area_portfolio">
+		<div class="one-third-port hoverzoom1 wow fadeInLeft">
+			<a><img src="img/_casamento/Casamento_1.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom1 wow fadeInLeft">
+			<a><img src="img/_casamento/Casamento_2.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom1 wow fadeInRight">
+			<a><img src="img/_casamento/Casamento_3.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom1 foto_album1 wow fadeInRight">
+			<a><img src="img/_casamento/Casamento_4.jpg"></a>
+			<div class="retina1">
+				<p>Casamento</p>
+				<a href="galeria_casamento.html">Álbum</a>
+			</div>
+		</div>
+		<div class="one-third-port hoverzoom2 wow fadeInLeft">
+			<a><img src="img/_e_session/_e_session_01.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom2 wow fadeInLeft">
+			<a><img src="img/_e_session/_e_session_02.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom2 wow fadeInRight">
+			<a><img src="img/_e_session/_e_session_03.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom2 foto_album2 wow fadeInRight">
+			<a><img src="img/_e_session/_e_session_04.jpg"></a>
+			<div class="retina2">
+				<p>E-session</p>
+				<a href="galeria_e-session.html">Álbum</a>
+			</div>
+		</div>
+		<div class="one-third-port hoverzoom3 wow fadeInLeft">
+			<a><img src="img/_festa_infantil/_festa_infantil_01.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom3 wow fadeInLeft">
+			<a><img src="img/_festa_infantil/_festa_infantil_02.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom3 wow fadeInRight">
+			<a><img src="img/_festa_infantil/_festa_infantil_03.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom3 foto_album3 wow fadeInRight">
+			<a><img src="img/_festa_infantil/_festa_infantil_04.jpg"></a>
+			<div class="retina3">
+				<p>Festa Infantil</p>
+				<a href="galeria_festa_infantil.html">Álbum</a>
+			</div>
+		</div>
+		<div class="one-third-port hoverzoom4 wow fadeInLeft">
+			<a><img src="img/_gestante/_gestante_01.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom4 wow fadeInLeft">
+			<a><img src="img/_gestante/_gestante_02.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom4 wow fadeInRight">
+			<a><img src="img/_gestante/_gestante_03.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom4 foto_album4 wow fadeInRight">
+			<a><img src="img/_gestante/_gestante_04.jpg"></a>
+			<div class="retina4">
+				<p>Gestante</p>
+				<a href="galeria_gestante.html">Álbum</a>
+			</div>
+		</div>
+		<div class="one-third-port hoverzoom5 wow fadeInLeft">
+			<a><img src="img/_infantil/_infantil_01.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom5 wow fadeInLeft">
+			<a><img src="img/_infantil/_infantil_02.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom5 wow fadeInRight">
+			<a><img src="img/_infantil/_infantil_03.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom5 foto_album5 wow fadeInRight">
+			<a><img src="img/_infantil/_infantil_04.jpg"></a>
+			<div class="retina5">
+				<p>infantil</p>
+				<a href="galeria_infantil.html">Álbum</a>
+			</div>
+		</div>
+		<div class="one-third-port hoverzoom6 wow fadeInLeft">
+			<a><img src="img/_pre-Wedding/_pre-Wedding_01.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom6 wow fadeInLeft">
+			<a><img src="img/_pre-Wedding/_pre-Wedding_02.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom6 wow fadeInRight">
+			<a><img src="img/_pre-Wedding/_pre-Wedding_03.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom6 foto_album6 wow fadeInRight">
+			<a><img src="img/_pre-Wedding/_pre-Wedding_04.jpg"></a>
+			<div class="retina6">
+				<p>Pré-Wedding</p>
+				<a href="galeria_preWedding.html">Álbum</a>
+			</div>
+		</div>
+		<div class="one-third-port hoverzoom7 wow fadeInLeft">
+			<a><img src="img/_15_anos/15_anos_1.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom7 wow fadeInLeft">
+			<a><img src="img/_15_anos/15_anos_2.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom7 wow fadeInRight">
+			<a><img src="img/_15_anos/15_anos_3.jpg"></a>
+		</div>
+		<div class="one-third-port hoverzoom7 foto_album7 wow fadeInRight">
+			<a><img src="img/_15_anos/15_anos_4.jpg"></a>
+			<div class="retina7">
+				<p>15 anos</p>
+				<a href="galeria_15anos.html">Álbum</a>
+			</div>
+		</div>
+	</section>
+	<!-- Parallax imagens -->
+	<div id="depoimentos" class="bgParallax" data-speed="15">
+		<article>
+            
+           
+			<div id="carousel-testimonial" class="carousel slide text-center" data-ride="carousel">
+				<h1>Depoimentos</h1>
+				<!-- Slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<!-- Alguma imagem-->
+						<p>Cliente 1</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita et rem, voluptate dicta accusamus repudiandae libero molestias cumque corporis qui error officia, voluptates dolore quis neque possimus quos accusantium laudantium!</p>
+					</div>
+					<div class="item">
+						<!-- Alguma imagem-->
+						<p>Cliente 2</p>
+						<p>Fusce non fermentum mi. Praesent vel lobortis elit. Nulla sodales, risus quis sollicitudin iaculis, felis dolor aliquet purus, eget elementum velit nunc eu dolor. Curabitur elit tellus, dictu.</p>
+					</div>
+				</div>
+				<!-- Controles -->
+				<div class="btns">
+					<a class="btn btn-primary btn-sm" href="#carousel-testimonial" role="button" data-slide="prev">
+                                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+					<a class="btn btn-primary btn-sm" href="#carousel-testimonial" role="button" data-slide="next">
+                                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+				</div>
+			</div>
+		  
+		 	
+		</article>
+	</div>
+	<div id="frases" class="bgParallax" data-speed="150">
+		<article>
+			<p>A fotografia me ensinou a ter uma mente tranquila como a natureza e ver tudo com outro olhar, olhar com amor, me motivando a transmitir aquilo que ninguém vê da forma mais tranquila e amável. - Elson Lacerda ( Capacitado por Deus na arte de eternizar momentos). </p>
+		</article>
+	</div>
+
+	<div id="area_contato">
+		<!-- Sessão contato - foto -->
+		<section id="sobre" class="left-col_2 wow fadeInLeft">
+			<img class="foto_contato" src="img/Foto_contato_2.jpg">
+		</section>
+		<section class="sidebar_2 wow fadeInRight">
+			<!-- Sessão contato - formulário -->
+			<h2>Entre em contato</h2>
+			<div id="Formulario">
+				<iframe class="form" src="https://goo.gl/forms/en53xDCrBOwjuzG73" frameborder="0"></iframe>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div class="sub-footer">
+
+			<div id="go-top"><a class="smoothscroll" title="Voltar ao topo" href="#menuHeader"><span id="topo" class="icon-point-up"></span></a></div>
+
+			<div class="copyright">
+				&copy; Copyright - <a href="http://www.divulgarce.com.br/" target="_blank">DivulgarCe</a> / Desenvolvedor - <a href="https://www.facebook.com/gregory.sampaio.54" target="_blank">Gregory Sampaio Costa</a>. Todos os direitos reservados - 2017.
+			</div>
+
+		</div>
+	</footer>
+	<!-- JavaScript menu -->
+	<script type="text/javascript" src="js/jquery.dlmenu.js"></script>
+	<script type="text/javascript" src="js/script_menu.js"></script>
+	<!-- função para botão subir topo -->
+	<script src="js/subirTopo.js"></script>
+	<!-- js para animações-->
+	<script src="js/wow.min.js"></script>
+	<script src="js/custom.js"></script>
+	<!--Função do Script para carrossel depoimentos -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Função para que ao passar o mouse em cima das fotos do portfolio da pagina inicial, qualquer uma que seja, mostre o botão de cada album individualmente, mas somente na última foto de cada linha (Familia do portifolio: Ex: Casamento...)-->
+	<script>
+		$(".hoverzoom1").hover(function() {
+			$(".retina1").css("opacity", "1");
+			$(".retina1").css("transform", "translateX(0)");
+			$(".foto_album1 img").css("opacity", "0.5");
+		}, function() {
+			$(".retina1").css("opacity", "0");
+			$(".retina1").css("transform", "translateX(-300px)");
+			$(".foto_album1 img").css("opacity", "1");
+		});
+	</script>
+	<script>
+		$(".hoverzoom2").hover(function() {
+			$(".retina2").css("opacity", "1");
+			$(".retina2").css("transform", "translateX(0)");
+			$(".foto_album2 img").css("opacity", "0.5");
+		}, function() {
+			$(".retina2").css("opacity", "0");
+			$(".retina2").css("transform", "translateX(-300px)");
+			$(".foto_album2 img").css("opacity", "1");
+		});
+	</script>
+	<script>
+		$(".hoverzoom3").hover(function() {
+			$(".retina3").css("opacity", "1");
+			$(".retina3").css("transform", "translateX(0)");
+			$(".foto_album3 img").css("opacity", "0.5");
+		}, function() {
+			$(".retina3").css("opacity", "0");
+			$(".retina3").css("transform", "translateX(-300px)");
+			$(".foto_album3 img").css("opacity", "1");
+		});
+	</script>
+	<script>
+		$(".hoverzoom4").hover(function() {
+			$(".retina4").css("opacity", "1");
+			$(".retina4").css("transform", "translateX(0)");
+			$(".foto_album4 img").css("opacity", "0.5");
+		}, function() {
+			$(".retina4").css("opacity", "0");
+			$(".retina4").css("transform", "translateX(-300px)");
+			$(".foto_album4 img").css("opacity", "1");
+		});
+	</script>
+	<script>
+		$(".hoverzoom5").hover(function() {
+			$(".retina5").css("opacity", "1");
+			$(".retina5").css("transform", "translateX(0)");
+			$(".foto_album5 img").css("opacity", "0.5");
+		}, function() {
+			$(".retina5").css("opacity", "0");
+			$(".retina5").css("transform", "translateX(-300px)");
+			$(".foto_album5 img").css("opacity", "1");
+		});
+	</script>
+	<script>
+		$(".hoverzoom6").hover(function() {
+			$(".retina6").css("opacity", "1");
+			$(".retina6").css("transform", "translateX(0)");
+			$(".foto_album6 img").css("opacity", "0.5");
+		}, function() {
+			$(".retina6").css("opacity", "0");
+			$(".retina6").css("transform", "translateX(-300px)");
+			$(".foto_album6 img").css("opacity", "1");
+		});
+	</script>
+	<script>
+		$(".hoverzoom7").hover(function() {
+			$(".retina7").css("opacity", "1");
+			$(".retina7").css("transform", "translateX(0)");
+			$(".foto_album7 img").css("opacity", "0.5");
+		}, function() {
+			$(".retina7").css("opacity", "0");
+			$(".retina7").css("transform", "translateX(-300px)");
+			$(".foto_album7 img").css("opacity", "1");
+		});
+	</script>
+
+
+</body>
+
+</html>
